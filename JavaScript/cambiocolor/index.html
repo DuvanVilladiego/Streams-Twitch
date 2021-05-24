@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+</head>
+<style>
+    body {
+        transition: background-color 1s linear 0.2s, color 1s linear 0.2s;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        transition: color 0.5s linear 0.1s;
+        font-size: larger;
+    }
+    main {
+        justify-content: center;
+        text-align: center;
+    }
+    iframe {
+        display: none;
+    }
+
+</style>
+<body id="body">
+    <header id="header">
+        <div>
+            <h1>CAMBIO DE COLOR EN PAGINA</h1>
+            <p>Desarrollador por Duvan Villadiego y su chat de Twitch</p>
+        </div>
+    </header>
+    <main>
+        <button id="boton" onclick="enableFrame()"> VER TRANSMISION </button>
+        <iframe id="iframe"
+            src="https://player.twitch.tv/?channel=skarmori369&parent=127.0.0.1"
+            height="480"
+            width="720"
+            allowfullscreen="true">
+        </iframe>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
