@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.44 120.83">
+<defs>
+<style>.cls-1{fill:#fc6;stroke:#fc3;}.cls-1,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{stroke-miterlimit:10;}.cls-2{fill:#ec9126;stroke:#ec9126;}.cls-3{fill:#563407;stroke:#563407;}.cls-4{fill:#76450d;stroke:#76450d;}.cls-5{fill:#aaeb77;stroke:#499f71;}.cls-6,.cls-7{fill:#c87628;stroke:#c87628;}.cls-6,.cls-8{stroke-width:0.5px;}.cls-7{stroke-width:0.75px;}.cls-8{fill:#fbc762;stroke:#fbc762;}.cls-9{fill:#de2b1d;stroke:#a62b1d;}.cls-10{fill:#ef8069;stroke:#ef8069;}.cls-11{fill:#de2b00;stroke:#de2b1d;}.cls-12{fill:#47b01f;stroke:#22660c;}.cls-13{fill:#cfffa7;stroke:#327516;}.cls-14{fill:#84407a;stroke:#84407a;}.cls-15{fill:#e9c0d8;stroke:#e9c0d8;}.cls-16{fill:#c592af;}.cls-16,.cls-17{stroke:#c592af;}.cls-17{fill:none;}.cls-18{fill:#fff;}
+</style>
+</defs>
+    <g id="hamburguesa">
+        <path class="cls-6" d="M69.73,85.86v1.48L.25,58V56.57l1.56.66Z"/>
+        <path class="cls-7" d="M139,56.4v1.31L69.83,87.08h0v-1.5l.22.1,67.38-28.61Z"/>
+        <path class="cls-8" d="M139.19,56.05v.18l-1.55.66L70,85.66l-.22-.09L2.22,56.8.66,56.14,69.93,26.66Z"/>
+    </g>
+</svg>

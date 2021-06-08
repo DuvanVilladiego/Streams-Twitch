@@ -3,3 +3,8 @@
     flex-direction: column;
     width: 100px;
 }
+.imageContent .ingredients{
+    display:flex;
+    flex-direction: column;
+    width: 100px;
+}
