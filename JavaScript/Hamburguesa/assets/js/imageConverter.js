@@ -4,13 +4,13 @@ const ingredients = document.getElementById("ingredients")
 
 let boton = document.getElementById("boton");
 
-// BOTONES DE INGREDIENTES
-let lechuga = document.getElementById("lechuga")
-let carne = document.getElementById("carne")
-let cebolla = document.getElementById("cebolla")
-let pepinillos = document.getElementById("pepinillos")
-let queso = document.getElementById("queso")
-let tomate = document.getElementById("tomate")
+// BOTONES DE INGREDIENTES - seran implementados luego
+// let lechuga = document.getElementById("lechuga")
+// let carne = document.getElementById("carne")
+// let cebolla = document.getElementById("cebolla")
+// let pepinillos = document.getElementById("pepinillos")
+// let queso = document.getElementById("queso")
+// let tomate = document.getElementById("tomate")
 
 function ImageCreate() {
   html2canvas([imageContent], {
@@ -36,7 +36,3 @@ function addIngredient(ingrediente) {
 boton.addEventListener("click", () => {
   ImageCreate();
 });
-
-lechuga.addEventListener("click", () => {
-	addIngredient('lechuga')
-})
