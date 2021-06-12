@@ -1,10 +1,107 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #00ccff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .imageContent {
-    display:flex;
-    flex-direction: column;
-    width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.imageContent .ingredients{
-    display:flex;
-    flex-direction: column;
-    width: 100px;
+
+.imageContent .ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "......... ....... cebolla ...... ........." "......... tomates imagen queso ..........." "pepino .......... imagen ....... panArriba" "......... lechuga ...... panAbajo ........" "......... ....... carne .......... .......";
+}
+
+.wrapper > .cebolla {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cebolla;
+}
+
+.wrapper > .tomates {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: tomates;
+}
+
+.wrapper > .queso {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: queso;
+}
+
+.wrapper > .pepino {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pepino;
+}
+
+.wrapper > .panArriba {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: panArriba;
+}
+
+.wrapper > .lechuga {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: lechuga;
+}
+
+.wrapper > .panAbajo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: panAbajo;
+}
+
+.wrapper > .carne {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: carne;
+}
+
+.wrapper > .imageContent {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: imagen;
+}
+/*# sourceMappingURL=styles.css.map */
