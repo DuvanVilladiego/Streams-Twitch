@@ -27,6 +27,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+
+.fixed {
+  position: absolute;
+  top: 0px;
 }
 
 .imageContent .ingredients {
@@ -37,6 +45,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  top: 166px;
+  position: relative;
 }
 
 .wrapper {

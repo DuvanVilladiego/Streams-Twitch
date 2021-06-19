@@ -2,14 +2,18 @@
 let imageContent = document.getElementById("imageContent")
 const ingredients = document.getElementById("ingredients")
 
-
-//BOTONES DE INGREDIENTES - seran implementados luego
+//BOTONES DE INGREDIENTES
 let lechuga = document.getElementById("lechuga")
 let carne = document.getElementById("carne")
 let cebolla = document.getElementById("cebolla")
 let pepino = document.getElementById("pepino")
 let queso = document.getElementById("queso")
 let tomates = document.getElementById("tomates")
+let panAbajo = document.getElementById("panAbajo")
+let panArriba = document.getElementById("panArriba")
+
+let position = 0
+let topx = 5
 
 function ImageCreate() {
   html2canvas([imageContent], {
@@ -26,9 +30,11 @@ function ImageCreate() {
 }
 
 function addIngredient(ingrediente) {
+  position += 1
 	ingredients.innerHTML += `
-	<img src="./assets/img/png/${ingrediente}.png" alt="">
+	<img style="z-index:${position}; position:absolute; top:${topx}px" src="./assets/img/png/${ingrediente}.png" alt="">
 	`
+  topx -= 5
 }
 
 // generear imagen
@@ -59,4 +65,12 @@ queso.addEventListener('click', () => {
 
 tomates.addEventListener('click', () => {
   addIngredient('tomates')
+})
+
+panArriba.addEventListener('click', () => {
+  addIngredient('panArriba')
+})
+
+panAbajo.addEventListener('click', () => {
+  addIngredient('panAbajo')
 })
